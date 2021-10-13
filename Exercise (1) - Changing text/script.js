@@ -9,6 +9,4 @@ function mouseOver() {
 
 function mouseOut() {
     yellow.innerHTML="<h2>Hello World</h2>  ";
-
-
 }
