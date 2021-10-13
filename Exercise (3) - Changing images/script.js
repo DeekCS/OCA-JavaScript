@@ -9,16 +9,12 @@ select.addEventListener('change',backgrounds);
 function backgrounds(){
     let choice = select.value;
     if(choice == 'jordan'){
-        // image.src = 'img/Flag_of_Jordan.svg';
         image.style.backgroundImage = 'url(img/jordan.png)';
-
     }
     else if(choice == 'palestine'){
         image.style.backgroundImage= 'url(img/Flag_of_Palestine.svg.png)';
-        // image.src = 'img/Flag_of_Palestine.svg.png';
     }
     else if(choice == 'Saudi'){
         image.style.backgroundImage = 'url(img/saudi.png)';
-        // image.src = 'img/Flag_of_Saudi_Arabia.svg';
     }
 }
