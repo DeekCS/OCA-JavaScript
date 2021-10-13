@@ -1,6 +1,9 @@
 let select= document.getElementById('font');
 let paragraph = document.getElementById('paragraph');
 let size = document.getElementById('font-size');
+let underline = document.getElementById('Underline');
+let bold = document.getElementById('Bold');
+let italic = document.getElementById('Italic');
 
 select.addEventListener('change', function(){
     let choice = select.value;
@@ -22,9 +25,33 @@ size.addEventListener('change', function(){
     } else if (choice == 'medium') {
     paragraph.style.fontSize = '16px';
     } else if (choice == 'large') {
-         paragraph.style.fontSize = '24px';
+        paragraph.style.fontSize = '24px';
     }else if (choice == 'x-large') {
         paragraph.style.fontSize = '32px';
+    }
+});
+
+underline.addEventListener('click', function(){
+    if (underline.checked) {
+        paragraph.style.textDecoration = 'underline';
+    } else {
+        paragraph.style.textDecoration = 'none';
+    }
+});
+
+italic.addEventListener('click', function(){
+    if (italic.checked) {
+        paragraph.style.fontStyle = 'italic';
+    } else {
+        paragraph.style.fontStyle = 'normal';
+    }
+});
+
+bold.addEventListener('click', function(){
+    if (bold.checked) {
+        paragraph.style.fontWeight = 'bold';
+    } else {
+        paragraph.style.fontWeight = 'normal';
     }
 });
 
