@@ -13,8 +13,11 @@ function getRandomColor() {
 
 }
 
-let colors = ["red", "blue", "yellow"]
+let colorArray = ["red", "blue", "yellow"]
 
 function getColor() {
-    getDiv.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    backColor = colorArray.shift();
+    colorArray.push(backColor);
+    getDiv.style.backgroundColor = backColor;
+
 }
