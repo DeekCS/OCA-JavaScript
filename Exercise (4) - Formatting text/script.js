@@ -1,6 +1,6 @@
 let select= document.getElementById('font');
 let paragraph = document.getElementById('paragraph');
-let parg = document.getElementById('parg');
+let size = document.getElementById('font-size');
 
 select.addEventListener('change', function(){
     let choice = select.value;
@@ -14,7 +14,7 @@ select.addEventListener('change', function(){
 
 });
 
-let size = document.getElementById('font-size');
+
 size.addEventListener('change', function(){
     let choice = size.value;
     if (choice == 'small') {
@@ -27,5 +27,6 @@ size.addEventListener('change', function(){
         paragraph.style.fontSize = '32px';
     }
 });
+
 
 
