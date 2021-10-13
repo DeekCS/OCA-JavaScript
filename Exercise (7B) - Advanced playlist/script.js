@@ -9,15 +9,11 @@ add.addEventListener('click', function() {
     playlist.appendChild(newSong);
     newSong.innerHTML = songName.value;
 
-   
         let removeBtn = document.createElement('button');
         removeBtn.innerHTML = 'Delete';
         newSong.appendChild(removeBtn);
         removeBtn.addEventListener('click', function() {
             playlist.removeChild(newSong);
         });
-
-   
-    
 });
 
