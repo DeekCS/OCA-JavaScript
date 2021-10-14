@@ -18,26 +18,32 @@ let hideBtn2 = document.getElementById('hideBtn2');
 
 showBtn.addEventListener('click', function() {
     text.style.display = 'block';
+    showBtn.style.display = 'none';
 });
 
 hideBtn.addEventListener('click', function() {
     text.style.display = 'none';
+    showBtn.style.display = 'block';
 });
 
 showBtn1.addEventListener('click', function() {
     text1.style.display = 'block';
+    showBtn1.style.display = 'none';
 });
 
 hideBtn1.addEventListener('click', function() {
     text1.style.display = 'none';
+    showBtn1.style.display = 'block';
 });
 
 showBtn2.addEventListener('click', function() {
     text2.style.display = 'block';
+    showBtn2.style.display = 'none';
 });
 
 hideBtn2.addEventListener('click', function() {
     text2.style.display = 'none';
+    showBtn2.style.display = 'block';
 });
 
 
