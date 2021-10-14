@@ -5,6 +5,10 @@ let playlist = document.getElementById('playlist');
 add.addEventListener('click', function() {
     let newSong = document.createElement('div');
         let songName=document.getElementById("songName");
+        if (songName.value == "") {
+            alert("Please enter a song name");
+        } else {
+
     playlist.style.display = 'block';
     playlist.appendChild(newSong);
     newSong.innerHTML = songName.value;
@@ -15,5 +19,9 @@ add.addEventListener('click', function() {
         removeBtn.addEventListener('click', function() {
             playlist.removeChild(newSong);
         });
+
+            
+        }
+   
 });
 
