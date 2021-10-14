@@ -48,7 +48,7 @@
 
 
     password.addEventListener('keydown', function() {
-        if (password.value.length < 6 ) {
+        if (password.value.length < 5 ) {
             message.style.color = 'red';
             message.innerHTML = 'Too short';
         } else {
@@ -59,7 +59,7 @@
     });
 
     confirm_password.addEventListener('keyup', function() {
-        if (confirm_password.value === password.value && confirm_password.value.length >= 6) {
+        if (confirm_password.value === password.value && confirm_password.value.length >= 5) {
             confirmMessage.style.color = 'green';
             confirmMessage.innerHTML = 'Good Pass';
             submit.style.display = 'block';
