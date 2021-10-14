@@ -8,20 +8,15 @@ add.addEventListener('click', function() {
         if (songName.value == "") {
             alert("Please enter a song name");
         } else {
-
-    playlist.style.display = 'block';
-    playlist.appendChild(newSong);
-    newSong.innerHTML = songName.value;
-
-        let removeBtn = document.createElement('button');
-        removeBtn.innerHTML = 'Delete';
-        newSong.appendChild(removeBtn);
-        removeBtn.addEventListener('click', function() {
-            playlist.removeChild(newSong);
-        });
-
-            
+            playlist.style.display = 'block';
+            playlist.appendChild(newSong);
+            newSong.innerHTML = songName.value;
+            let removeBtn = document.createElement('button');
+            removeBtn.innerHTML = 'Delete';
+            newSong.appendChild(removeBtn);
+            removeBtn.addEventListener('click', function() {
+                playlist.removeChild(newSong);
+        });  
         }
-   
 });
 
