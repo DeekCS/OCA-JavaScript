@@ -409,7 +409,9 @@ Ex: randomNumber()
 => 0.475
 
 */
-
+function randomNumber() {
+  return Math.random()*1;
+}
 /*
 21
 Write a function called randomBetweenNumbers
