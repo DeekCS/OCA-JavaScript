@@ -156,7 +156,13 @@ Ex: canIGetADrivingLicense(20)
 
 */
 
-
+function canIGetADrivingLicense(age) {
+  if (age >= 20) {
+    return 'yes you can';
+  } else {
+    return `please come back after ${20 - age} years to get one`;
+  }
+}
 /*
 10
 Write a function called sameLength
