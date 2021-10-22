@@ -28,6 +28,9 @@ Ex: calculateDogAge(1);
 => "Your doggie is 7 years old in dog years!"
 */
 
+function calculateDogAge(puppyAge) {
+  return `Your doggie is ${puppyAge * 7} years old in dog years!`;
+}
 
 /*
 3
