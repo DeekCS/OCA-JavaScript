@@ -309,7 +309,13 @@ Ex: isEven(2)
 => true
 
 */
-
+function isEven(num) {
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
 16
