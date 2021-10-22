@@ -78,6 +78,9 @@ function double('7') {
 }
 */
 
+function double(x) {
+  return 2 * x;
+}
 
 
 /*
