@@ -373,6 +373,9 @@ Ex: fullName("Alex", "Mercer")
 => "Alex Mercer"
 */
 
+function fullName(firstName, lastName) {
+  return firstName + ' ' + lastName;
+}
 
 /*
 19
