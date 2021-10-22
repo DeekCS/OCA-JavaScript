@@ -58,7 +58,9 @@ and it will return hello + name
 Ex: greet("Adam")
 => "Hello Adam"
 */
-
+function greet(name) {
+  return `Hello ${name}`;
+}
 
 /*
 5
