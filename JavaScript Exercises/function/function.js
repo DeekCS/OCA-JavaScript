@@ -285,7 +285,17 @@ Ex: longerString("air","schoo","car","github")
 
 try all the cases (change the order of the longestString)
 */
-
+function longerString(str1, str2, str3, str4) {
+  if (str1.length > str2.length && str1.length > str3.length && str1.length > str4.length) {
+    return str1;
+  } else if (str2.length > str1.length && str2.length > str3.length && str2.length > str4.length) {
+    return str2;
+  } else if (str3.length > str1.length && str3.length > str2.length && str3.length > str4.length) {
+    return str3;
+  } else {
+    return str4;
+  }
+}
 /*
 15
 Write a function called isEven
