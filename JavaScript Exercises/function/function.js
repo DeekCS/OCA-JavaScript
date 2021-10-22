@@ -177,6 +177,13 @@ Ex: sameLength("tree","clue")
 Ex: sameLength("tree","car")
 => false
 */
+function sameLength(str1, str2) {
+  if (str1.length === str2.length) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 /*
 11
@@ -191,7 +198,13 @@ Ex: largerNubmer(5,3)
 => 5
 */
 
-
+function largerNumber(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
 /*
 12
 Write a function called smallerNubmer
