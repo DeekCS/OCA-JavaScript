@@ -522,3 +522,10 @@ Ex: resetCounter()
 Ex: counter()
 => 1
 */
+function resetCounter() {
+  var count = 0;
+  return function() {
+    count++;
+    return count;
+  }
+}
