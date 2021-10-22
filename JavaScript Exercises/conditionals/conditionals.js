@@ -25,8 +25,20 @@ if(num1 > num2) {
 Sample numbers : 3, -7, 2 
 Output : The sign is - */
 /******* Start Your Code *********/
-  
 
+let x =3, y=-7, z=2;
+
+        if (x> 0 && y >0 && z >0) {
+            alert(`The Sign is +`);
+        }else if (x< 0 && y <0 && z <0) {
+            alert('The Sign is -');
+        }else if (x >0 && y < 0 && z <0) {
+            alert('The Sign is +');
+        }else if (x <0 && y>0 && z<0) {
+            alert('The Sign is +');
+        }else {
+            alert('The Sign is -');
+        }
 
  /******* End Your Code ********* */
 
