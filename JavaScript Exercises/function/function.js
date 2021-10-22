@@ -120,7 +120,9 @@ Ex: cube(4)
 => 64
 */
 
-
+function cube(x) {
+  return x * x * x;
+}
 /*
 8
 Write a function called multiply that:
