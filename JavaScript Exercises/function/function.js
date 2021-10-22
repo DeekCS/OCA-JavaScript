@@ -134,6 +134,9 @@ Ex: multiply(5,4)
 => 20
 */
 
+function multiply(x, y) {
+  return x * y;
+}
 
 /*
 9
