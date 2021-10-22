@@ -451,6 +451,19 @@ Ex: scoreInUniversty(71)
 => "C"
 */
 
+function scoreInUniversty(num) {
+  if (num >= 95) {
+    return 'A';
+  } else if (num >= 85) {
+    return 'B';
+  } else if (num >= 70) {
+    return 'C';
+  } else if (num >= 50) {
+    return 'D';
+  } else {
+    return 'F';
+  }
+}
 
 /*
 23
