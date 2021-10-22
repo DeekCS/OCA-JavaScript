@@ -352,6 +352,13 @@ Ex: positive(-5)
 
 */
 
+function positive(num) {
+  if (num > 0) {
+    return num;
+  } else {
+    return -num;
+  }
+}
 
 /*
 18
