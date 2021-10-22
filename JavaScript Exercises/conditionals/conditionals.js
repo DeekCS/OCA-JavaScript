@@ -1,7 +1,20 @@
 /* 1. Write a JavaScript program that accept two integers and
  * display the larger.Go to the editor */
 /******* Start Your Code *********/
+
   
+let num1 , num2;
+
+num1= window.prompt('Enter the First Num');
+num2= window.prompt('Enter the Second Num');
+
+if(num1 > num2) {
+    console.log(`The larger num of ${num1} and ${num2} is ${num1}`);
+}else if ( num2 > num1) {
+    console.log(`The larger num of ${num1} and ${num2} is ${num2}`);
+}else{
+    console.log(`the values of ${num1} and ${num2} are Equal!`);
+}
 
 
  /******* End Your Code ********* */
