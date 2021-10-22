@@ -427,7 +427,9 @@ Ex: randomBetweenNumbers(3,100)
 
 */
 
-
+function randomBetweenNumbers(num1, num2) {
+  return Math.random() * (num2 - num1) + num1;
+}
 /*
 22
 Write a function called scoreInUniversty
