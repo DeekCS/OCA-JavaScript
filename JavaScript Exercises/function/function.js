@@ -10,6 +10,10 @@ Ex: tellFortune('software engineer', 'Jordan', 'Alice', 3);
 => "You will be a software engineer in Jordan, and married to Alice with 3 kids."
 */
 
+function tellFortune(jobTitle, geoLocation, partnerName, numChildren) {
+  return `You will be a ${jobTitle} in ${geoLocation}, and married to ${partnerName} with ${numChildren} kids.`;
+}
+
 
 /*
 2
