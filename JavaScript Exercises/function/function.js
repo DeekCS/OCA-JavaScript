@@ -44,7 +44,11 @@ Ex: calculateSupply(30, 3);
 => 'You will need 76650 cups of tea to last you until the ripe old age of 100;
 */
 
-
+function calculateSupply(age, amountPerDay) {
+  const maxAge = 100;
+  const totalAmount = (maxAge - age) * 365 * amountPerDay;
+  return `You will need ${totalAmount} cups of tea to last you until the ripe old age of ${maxAge}`;
+}
 /*
 4
 Write a function called greet that:
