@@ -258,7 +258,19 @@ Ex: shorterString("air","tr","car","github","by")
 => by
 
 */
-
+function shorterString(str1, str2, str3, str4, str5) {
+  if (str1.length < str2.length && str1.length < str3.length && str1.length < str4.length && str1.length < str5.length) {
+    return str1;
+  } else if (str2.length < str1.length && str2.length < str3.length && str2.length < str4.length && str2.length < str5.length) {
+    return str2;
+  } else if (str3.length < str1.length && str3.length < str2.length && str3.length < str4.length && str3.length < str5.length) {
+    return str3;
+  } else if (str4.length < str1.length && str4.length < str2.length && str4.length < str3.length && str4.length < str5.length) {
+    return str4;
+  } else {
+    return str5;
+  }
+}
 /*
 14
 Write a function called longerString
