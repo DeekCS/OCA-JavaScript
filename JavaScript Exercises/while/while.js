@@ -23,7 +23,15 @@ Ex: subtract(5); => 5 - 4 - 3 - 2 - 1 - 0 => -5
 Ex: subtract(9); => 9 - 8 - 7 - 6 - 5 - 4 - 3 - 2 - 1 - 0 => -27
 */
 
-
+function subtract(n) {
+    let result = 0;
+    while (n >= 0) {
+        result -= n;
+        n--;
+    }
+    return result;
+}
+console.log(subtract(2));
 /*
 2
 Create a function called factorial
@@ -33,7 +41,15 @@ Ex: factorial(2); => 2 * 1 => 2
 Ex: factorial(4); => 4 * 3 * 2 * 1 => 24
 */
 
-
+function factorial(n) {
+    let result = 1;
+    while (n >= 1) {
+        result *= n;
+        n--;
+    }
+    return result;
+}
+console.log(factorial(2));
 /*
 3
 Create a function called repeatStr
@@ -46,6 +62,15 @@ Ex: repeatStr("to",2); => "to to"
 Ex: repeatStr("to",4); => "to to to to"
 */
 
+function repeatStr(string, number) {
+    let result = '';
+    while (number > 0) {
+        result += string;
+        number--;
+    }   
+    return result;
+}
+console.log(repeatStr("to",2));
 
 /*
 4
@@ -56,6 +81,15 @@ Ex: sum2(4, 5); => 4 + 5 => 9
 Ex: sum2(3, 6); => 3 + 4 + 5 + 6 => 18
 */
 
+function sum2(first, second) {
+    let result = 0;
+    while (first <= second) {
+        result += first;
+        first++;
+    }
+    return result;
+}
+console.log(sum2(4, 5));
 
 /*
 5
@@ -68,6 +102,15 @@ and return the first string number time
 Ex: repeatStr2("ro","cc"); => "ro ro"
 Ex: repeatStr2("ro","fff"); => "ro ro ro"
 */
+function repeatStr2(string, number) {
+    let result = '';
+    while (number > 0) {
+        result += string;
+        number--;
+    }
+    return result;
+}
+console.log(repeatStr2("ro","cc"));
 
 
 /*
@@ -82,6 +125,15 @@ Ex: multiOf(6,3,2); => 54
 Ex: multiOf(6,2,3); => 48
 */
 
+function multiOf(first, second, third) {
+    let result = first;
+    while (third > 0) {
+        result *= second;
+        third--;
+    }
+    return result;
+}
+console.log(multiOf(4,10,3));
 
 /*
 7
@@ -93,7 +145,15 @@ Ex: muti2(4, 5); => 4 * 5 => 20
 Ex: muti2(3, 6); => 3 * 4 * 5 * 6 => 360
 */
 
-
+function muti2(first, second) {
+    let result = 1;
+    while (first <= second) {
+        result *= first;
+        first++;
+    }
+    return result;
+}
+console.log(muti2(4, 5));
 /*
 8
 Create a function called numberBetweenUs
@@ -106,6 +166,15 @@ numberBetweenUs(2,8) => "3, 4, 5, 6, 7"
 numberBetweenUs(1,3) => "2"
 */
 
+function numberBetweenUs(num1, num2) {
+    let result = '';
+    while (num1 < num2) {
+        result += num1 + ', ';
+        num1++;
+    }
+    return result.slice(0, -2);
+}
+console.log(numberBetweenUs(2,8));
 
 /*
 9
@@ -124,6 +193,13 @@ countDown(2)
 countDown(7)
 => "7, 6, 5, 4, 3, 2, 1, done"
 */
+function countDown(num) {
+    if (num === 0) {
+        return 'done';
+    }
+    return num + ', ' + countDown(num - 1);
+}
+console.log(countDown(5));
 
 /*
 10
@@ -135,6 +211,16 @@ multiplication2(5,4) => 20
 multiplication2(2,8) => 16
 multiplication2(7,6) =>  42
 */
+
+function multiplication2(first, second) {
+    let result = 0;
+    while (first > 0) {
+        result += second;
+        first--;
+    }
+    return result;
+}
+console.log(multiplication2(5,4));
 
 /*
 11
@@ -148,6 +234,15 @@ mod2(7,4) => 3
 mod2(8,4) => 0
 */
 
+function mod2(first, second) {
+    let result = 0;
+    while (first > 0) {
+        result += second;
+        first--;
+    }
+    return result;
+}
+console.log(mod2(5,4));
 
 /*
 12
@@ -170,7 +265,16 @@ try more case by yourself
 
 
 
-
+function repeatChar(string, char) {
+    let result = 0;
+    for (let i = 0; i < string.length; i++) {
+        if (string[i].toLowerCase() === char.toLowerCase()) {
+            result++;
+        }
+    }
+    return result;
+}
+console.log(repeatChar("schOol","o"));
 
 
 
@@ -200,6 +304,17 @@ fibon(n): 1 1 2 3 5 8 13 21
 n:        0 1 2 3 4 5  6  7
 */
 
+function fibon(num) {
+    if (num === 0) {
+        return 1;
+    }
+    if (num === 1) {
+        return 1;
+    }
+    return fibon(num - 1) + fibon(num - 2);
+}
+console.log(fibon(7));
+
 
 /*
 2
@@ -215,6 +330,14 @@ mirror("maDrasa") => "asarDam"
 */
 
 
+function mirror(string) {
+    let result = '';
+    for (let i = string.length - 1; i >= 0; i--) {
+        result += string[i];
+    }
+    return result;
+}
+console.log(mirror("school"));
 
 /*
 3
@@ -230,7 +353,18 @@ mirrorCaseAlso("THOR") => "roht"
 mirrorCaseAlso("BaBa") => "AbAb"
 */
 
-
+function mirrorCaseAlso(string) {
+    let result = '';
+    for (let i = string.length - 1; i >= 0; i--) {
+        if (string[i] === string[i].toLowerCase()) {
+            result += string[i].toUpperCase();
+        } else {
+            result += string[i].toLowerCase();
+        }
+    }
+    return result;
+}
+console.log(mirrorCaseAlso("sChOol"));
 
 /*
 4
@@ -248,6 +382,16 @@ repeatChar2("School","S") => 1
 try more case by yourself
 */
 
+function repeatChar2(string, char) {
+    let result = 0;
+    for (let i = 0; i < string.length; i++) {
+        if (string[i] === char) {
+            result++;
+        }
+    }
+    return result;
+}
+console.log(repeatChar2("schOol","o"));
 
 /*
 5
@@ -270,3 +414,15 @@ hi 5 Now Pleas Say Hello To 1, 2, 3 and 4
 hi 6 Now Pleas Say Hello To 1, 2, 3, 4 and 5
 hi 7 Now Pleas Say Hello To 1, 2, 3, 4, 5 and 6
 */
+
+function HiSayHelloTo(num) {
+    let result = '';
+    for (let i = 1; i <= num; i++) {
+        result += `hi ${i} Now Pleas Say Hello To ${i - 1}`;
+        if (i < num) {
+            result += '\n';
+        }
+    }
+    return result;
+}
+console.log(HiSayHelloTo(7));
