@@ -165,6 +165,10 @@ Ex: indexOfArray(nums,4) => 9
 **try more cases by your self
 */
 
+function indexOfArray(arr,index){
+    return arr[index];
+}
+console.log(indexOfArray([1,2,3,8,9],3));
 
 /*
 11
@@ -177,7 +181,10 @@ Ex: arrayExceptLast(nums) =>  [1,2,3,8]
 
 **try more cases by your self
 */
-
+function arrayExceptLast(arr){
+    return arr.slice(0,arr.length-1);
+}
+console.log(arrayExceptLast([1,2,3,8,9]));
 
 /*
 12
@@ -190,7 +197,10 @@ Ex: addToEnd(nums,55) =>  [1,2,3,8,55]
 
 **try more cases by your self
 */
-
+function addToEnd(arr,value){
+    return arr.push(value);
+}
+console.log(addToEnd([1,2,3,8,9],55));
 
 // all the exercises below should solved 2 times: 1- for loop 2- while lopp
 /*
@@ -206,6 +216,14 @@ Ex: sumArray(nums) => 23
 **try more cases by your self
 */
 
+function sumArray(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum;
+}
+console.log(sumArray([1,2,3,8,9]));
 
 /*
 14
@@ -220,6 +238,16 @@ Ex: minInArray(nums) => 1
 **try more cases by your self
 */
 
+function minInArray(arr){
+    let min = arr[0];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < min){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+console.log(minInArray([1,2,3,8,9]));
 
 /*
 15
@@ -235,6 +263,19 @@ Ex: minInArray(nums,8) => [1,2,3,9]
 */
 
 
+// console.log(minInArray([1,2,3,8,9]));
+let nums = [1,2,3,8,9];
+function removeFromArray(arr,value){
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] === value){
+            arr.splice(i,1);
+        }
+    }
+    return arr;
+}
+console.log(removeFromArray(nums,8));
+
+
 /*
 16
 Create a function called oddArray
@@ -247,7 +288,16 @@ Ex: oddArray(nums) => [1,3,9]
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
 */
-
+function oddArray(arr){
+    let odd = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 !== 0){
+            odd.push(arr[i]);
+        }
+    }
+    return odd;
+}
+console.log(oddArray([1,2,3,8,9]));
 
 /*
 17
@@ -264,7 +314,14 @@ Ex: aveArray(nums) => 16.6
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
 */
-
+function aveArray(arr){
+    let sum = 0;
+    for(let i = 0; i < arr.length; i++){
+        sum += arr[i];
+    }
+    return sum/arr.length;
+}
+console.log(aveArray([1,2,3,8,9]));
 
 /*
 18
@@ -279,7 +336,16 @@ Ex: shorterInArray(strings) => "alex"
 **try more cases by your self
 */
 
-
+function shorterInArray(arr){
+    let min = arr[0];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].length < min.length){
+            min = arr[i];
+        }
+    }
+    return min;
+}
+console.log(shorterInArray(["alex","mercer","madrasa","rashed2","emad","hala"]));
 /*
 19
 Create a function called repeatChar
@@ -294,7 +360,16 @@ Ex: repeatChar(string,"z") => 0
 **try more cases by your self
 */
 
-
+function repeatChar(str,char){
+    let count = 0;
+    for(let i = 0; i < str.length; i++){
+        if(str[i] === char){
+            count++;
+        }
+    }
+    return count;
+}
+console.log(repeatChar("alex mercer madrasa rashed2 emad hala","a"));
 /*
 20
 Create a function called evenIndexOddLength
@@ -308,6 +383,16 @@ Ex: evenIndexOddLength(strings) => ["madrasa"]
 **try more cases by your self
 */
 
+function evenIndexOddLength(arr){
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].length % 2 !== 0){
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+console.log(evenIndexOddLength(["alex","mercer","madrasa","rashed2","emad","hala"]));
 
 /*
 21
@@ -322,6 +407,14 @@ Ex: powerElementIndex(nums) => [0, 5, 16, 27, 16, 100000]
 **try more cases by your self
 */
 
+function powerElementIndex(arr){
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++){
+        newArr.push(arr[i]**i);
+    }
+    return newArr;
+}
+console.log(powerElementIndex([44, 5, 4, 3, 2, 10]));
 
 /*
 22
@@ -335,3 +428,14 @@ Ex: evenNumberEvenIndex(nums) => [2,8,34]
 ** solve it one time using for loop and another using while loop
 **try more cases by your self
 */
+
+function evenNumberEvenIndex(arr){
+    let newArr = [];
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] % 2 === 0){
+            newArr.push(arr[i]);
+        }
+    }
+    return newArr;
+}
+console.log(evenNumberEvenIndex([5,2,2,1,8,66,55,77,34,9,55,1]));
